@@ -5,13 +5,26 @@ Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
+
+#closed-captions{
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 40%;
+    z-index: 100;
+}
+
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
+    top: -90px;
+    color: white;
+    z-index: 1;
 }
 #closed-captions .on {
 	opacity: 1;
+    
 }
 #closed-captions .off {
 	transition: .2s;
@@ -19,7 +32,309 @@ Feel free to adjust the defaults to your needs.
 }
 .voice1 {
 	font-style: italic;
+    color: white;
 }
+
+.voice2 {
+    color: white;
+}
+
+body{
+    background-color: black;
+    margin: 0 auto;
+}
+
+.item-1{
+    justify-self:center;
+  
+}
+
+.item-4{
+    margin-left: 70px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+    grid-template-rows: minmax(100px, auto);
+    
+}
+
+.sound1 .item-2{
+    z-index: 30;
+    background-image: url(https://i.gifer.com/7VUL.gif);
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    margin-left: 260px;
+}
+
+.sound2 .item-2 {
+    background-image: none;
+}
+
+.sound1 iframe{
+    animation: bobbelen 1s;
+}
+
+@keyframes bobbelen {
+
+0% {
+    transform: rotate(-5deg);
+}
+10% {
+    transform: rotate(5deg)
+}
+20% {
+    transform: rotate(-5deg)
+}
+30% {
+    transform: rotate(5deg)
+}
+40% {
+    transform: rotate(-5deg);
+}
+50% {
+    transform: rotate(5deg)
+}
+60% {
+    transform: rotate(-5deg)
+}
+70% {
+    transform: rotate(5deg)
+}
+80% {
+    transform: rotate(-5deg);
+}
+90% {
+    transform: rotate(5deg)
+}
+100% {
+    transform: rotate(-5deg)
+}
+}
+
+.sound3 iframe{
+    animation: sound3 1s;
+}
+
+@keyframes sound3 {
+
+  10%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.sound4 iframe{
+    animation: sound4 1s;
+}
+
+@keyframes sound4{
+    0%{
+        background-color: black;
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+.sound5 iframe{
+    animation: sound5 1s;
+}
+
+@keyframes sound5 {
+
+  10%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.sound6 iframe{
+    animation: sound6 1s;
+}
+
+@keyframes sound6{
+    0%{
+        background-color: black;
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+.sound7 iframe{
+    animation: sound7 1s;
+}
+
+@keyframes sound7 {
+
+  10%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.sound8 iframe{
+    animation: sound8 1s;
+}
+
+@keyframes sound8{
+    0%{
+        background-color: black;
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+.sound9 iframe{
+    animation: sound9 48s;
+}
+
+@-webkit-keyframes sound9 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  5% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  10% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  15% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+    20% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  25% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  30% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  35% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+      40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  45% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+    50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  55% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  60% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  65% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+          70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+    80% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  85% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  90% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  95% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+     100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
 
 /* **********************************************
 The first paragraph, with extended timing for 
@@ -94,3 +409,282 @@ You probably want to change the styling.
 	transition: 0s 3.7s;
 	font-family: "brenner slab";
 }
+
+/*BRON HEART RATE: https://codepen.io/Danos/pen/vMKMMg*/
+
+.heart-rate {
+    width: 100vw;
+  height: 73px;
+  margin: 100px auto;
+}
+
+.fade-in {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  top: 0;
+  right: 0;
+  animation: heartRateIn 2.5s linear infinite;
+}
+
+.fade-out {
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  top: 0;
+  left: -120%;
+  animation: heartRateOut 2.5s linear infinite;
+  background: rgba(255, 255, 255, 1);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+@keyframes heartRateIn {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes heartRateOut {
+  0% {
+    left: -120%;
+  }
+  30% {
+    left: -120%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+iframe{
+    z-index: 20;
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.ritmegeen{
+    position: absolute;
+    bottom: 1px;
+}
+
+.ritmewel{
+    opacity: 0;
+}
+
+.sound8 .ritmewel{
+    opacity: 1;
+}
+
+.sound8 .ritmegeen{
+    opacity: 0;
+}
+
+.sound10 .ritmewel{
+    opacity: 0;
+}
+
+.sound10 .ritmegeen{
+    opacity: 1;
+}
+
+.sound11 .ritmewel{
+    opacity: 1;
+}
+
+.sound11 .ritmegeen{
+    opacity: 0;
+}
+
+.p6.on {
+    font-size: 100px;
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    
+}
+
+.p8.on {
+    font-size: 100px;
+    -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.p9.on {
+    font-size: 100px;
+    	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+}
+
+.p11.on span {
+    font-size: 100px;
+    -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+    
+}
+
+.p12.on span {
+    font-size: 100px;
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+.p14.on span {
+    font-size: 100px;
+    
+}
+
+.p15.on span {
+    font-size: 100px;
+    
+}
+
+.p17.on span {
+    font-size: 100px;
+    
+}
+
+.p18.on span {
+    font-size: 100px;
+
+}
+
+.p19.on span {
+    font-size: 100px;
+    
+}
+
+.p20.on span {
+    font-size: 100px;
+
+}
+
+.p14.on span {
+    font-size: 100px;
+    
+}
+
+.p15.on span {
+    font-size: 100px;
+    
+}
+
+.p17.on span {
+    font-size: 100px;
+    
+}
+
+.p18.on span {
+    font-size: 100px;
+
+}
+
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-5-22 22:7:6
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-5-22 22:12:0
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-5-22 22:16:17
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+
